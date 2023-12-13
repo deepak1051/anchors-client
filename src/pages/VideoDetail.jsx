@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 
-const API_KEY = `AIzaSyBYhrUPCRiXdzc6YvtSajglh9n3jMiPgg0`
+const API_KEY = import.meta.env.VITE_API_KEY
 
 const VideoDetail = () => {
   const { id } = useParams()

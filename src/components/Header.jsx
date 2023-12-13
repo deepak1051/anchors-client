@@ -32,7 +32,7 @@ const Header = () => {
 
     try {
       setIsLoading(true)
-      await axios.post('/api/sendMail', { name, number })
+      await axios.post('https://anchors-server.onrender.com/sendMail', { name, number })
       setIsSent(true)
       setIsLoading(false)
     } catch (error) {
